@@ -1,0 +1,28 @@
+{
+  "name": "mercado_liebre",
+  "version": "1.0.0",
+  "description": "Desafios curso Digital House",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wleskovar/mercado_liebre.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Full",
+    "Satack"
+  ],
+  "author": "Walter Leskovar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wleskovar/mercado_liebre/issues"
+  },
+  "homepage": "https://github.com/wleskovar/mercado_liebre#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

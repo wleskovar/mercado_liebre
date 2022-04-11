@@ -20,5 +20,9 @@ app.listen(8000, ()=> {
 app.get('/', (req, res) => {
     res.status(200).sendFile(views + '/home.html');
 })
+app.get('/register', (req, res) => {
+    res.status(200).sendFile(views + '/register.html');
+})
+
 
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/34fe496db5.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" class="logo">
+            <h2 class="copy-header">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito</h2>
+        </div>
+
+        <a href="#" class="hamburguer-button">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="rigth-navbar">
+                <li><a href="#">Creá tu cuenta <i class="fa-solid fa-credit-card"></i></a></li>
+                <li><a href="#">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+
+        </nav> 
+
+    </header>
+    <!-- Formulario -->
+    <form action="/crear_producto" method="post" class="createform">
+        <div class="control-formulario">
+            <label>Nombre y apellido:</label>
+            <input type="text" name="nombre_comppleto" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Nombre de usuario:</label>
+            <input type="text" name="usuario" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="fecha_nacimiento" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Domicilio:</label>
+            <textarea name="domicilio" class="control"></textarea>
+        </div>
+        <div class="control-formulario">
+            <label for="perfil">Perfil del ususrio:</label>
+            <label>comprar <input type="checkbox" name="perfil" value="comprar"></label>
+            <label>vender <input type="checkbox" name="perfil" value="vender"></label>
+        </div>
+        <div class="control-formulario">
+            <label for="perfil">Categorías de interés:</label>
+            <label>Electro <input type="checkbox" name="perfil" value="electro"></label>
+            <label>Moda <input type="checkbox" name="perfil" value="Moda"></label>
+            <label>Hogar <input type="checkbox" name="perfil" value="hogar"></label>
+            <label>Juguetería <input type="checkbox" name="perfil" value="jugueteria"></label>
+            <label>Vida sana <input type="checkbox" name="perfil" value="vida_sana"></label>
+        </div>
+        <div class="control-formulario">
+            <label>Foto de usuario:</label>
+            <input type="file" name="foto_usuario" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Contraseña:</label>
+            <input type="password" name="pass" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Confirmar contraseña:</label>
+            <input type="password" name="pass" class="control">
+        </div>           
+        <button type="submit"class="boton_formulario">Guardar</button>
+        <button type="reset" class="boton_formulario">Borrar</button>
+    </form>
+</body>
+</html>

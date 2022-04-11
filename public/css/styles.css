@@ -1,0 +1,42 @@
+
+header {
+    font-family: 'Roboto';
+    background-color: #EAC926;;
+}
+
+.t_header {
+    margin: 5px;
+}
+
+.menu {
+    color: rgb(39, 1, 255);
+}
+
+#primero:hover {
+    display: inline-block;
+    list-style-type: upper-roman;
+}
+
+#segundo {
+    list-style-type: circle;
+    margin: 20px;
+    padding: 10px;
+}
+
+article {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+}
+.descripcion{
+    font-size: 16px;
+}

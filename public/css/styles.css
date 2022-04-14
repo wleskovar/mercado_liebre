@@ -1,42 +1,169 @@
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
 header {
-    font-family: 'Roboto';
-    background-color: #EAC926;;
+    font-family: 'Roboto', sans-serif;
+}
+.main-header {
+    background-color: #EAC926;
+    top: 0;
 }
 
-.t_header {
+/* company logo */
+.logo {
+    width: 200px;
+}
+/* product and brand search engine */
+.search_bar {
+
+}
+/* legend form of payment */
+.copy-header {
     margin: 5px;
-}
 
-.menu {
-    color: rgb(39, 1, 255);
 }
-
-#primero:hover {
-    display: inline-block;
-    list-style-type: upper-roman;
+/* menu options */
+.main_navbar {
+    display: none;
 }
-
-#segundo {
-    list-style-type: circle;
-    margin: 20px;
-    padding: 10px;
+.navbar {
+    list-style: none;
 }
-
-article {
+.login_bar {
+    list-style: none;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    
+}
+/* burger menu */
+.hamburguer-button {
+    background-color: #1259c3;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
     text-align: center;
+    font-size: 18px;
+    margin: auto;
+
 }
 
-h2 {
+/* banner products section */
+.main_banner {
+    width: 100vw;
+    margin-top: 0;
+}
+/* products */
+.main_configuration {
+    width: 100vw;
+    margin-bottom: 10px;
+    background-color: #ebebeb;
+}
+.main_configuration h2 {
     font-size: 24px;
 }
-
-.precio{
+.product_container {
+    border-top: solid 1px #ebebeb;
+    background-color: #ffffff;
+    width: 90vw;
+    margin: 15px;
+}
+.product_container figure img {
+    border: dotted 2px red;
+    width: 100%;
+    align-items: center;   
+}
+.descripcion {
+    display: none;
+    font-size: 16px;
+    color: #666;
+}
+.precio {
     font-size: 18px;
 }
-.descuento{
+.descuento {
     font-size: 16px;
+    color: #666;
 }
-.descripcion{
-    font-size: 16px;
+.foot_product {
+    border: dotted 2px blue;
+    margin: 15px;
 }
+.foot_product img {
+    width: 15%;
+}
+.foot_product p {
+    margin: 0;;
+}
+
+
+/* Footer */
+.items_configuration {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.item_component {
+    /*border: dotted 2px red; */
+    margin: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item_component i {
+    /*border: dotted 2px rgb(68, 0, 255); */
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.item_component h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    /*border: dotted 2px rgb(68, 0, 255); */
+}
+.item_component p {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 83%;
+    text-align: center;
+    font-size: small;
+    /*border: dotted 2px rgb(68, 0, 255); */
+}
+/* legal legend */
+.item_copy {
+    margin: 10px;
+}
+
+/* Media query */
+@media (min-width: 361px) {
+    .descripcion {
+        display: block;
+        padding: 15px 0;
+    }
+    .product_container {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .main_navbar {
+        display: block;
+    }
+    .hamburguer-button {
+        display: none;
+    }
+    
+}
+@media (min-width: 769px) {
+
+}
+

@@ -1,5 +1,7 @@
 
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -62,6 +64,16 @@ header {
     margin-top: 0;
 }
 /* products */
+.all_regular, .all_offer { 
+    /*border: dotted 2px black;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 367px;
+    
+}
 .main_configuration {
     width: 100vw;
     margin-bottom: 10px;
@@ -73,35 +85,65 @@ header {
 .product_container {
     border-top: solid 1px #ebebeb;
     background-color: #ffffff;
-    width: 90vw;
     margin: 15px;
+    max-width: 324px;
+    max-height: 421px;
+    
 }
 .product_container figure img {
-    border: dotted 2px red;
+    /*border: dotted 2px red;*/
     width: 100%;
     align-items: center;   
+}
+.foot_product {
+    /*border: dotted 2px blue;*/
+    margin: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    
+}
+.prec_desc {
+    /*border: #39b54a dotted 2px;*/
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.prec_desc .precio {
+    /*border: dotted 2px red;*/
+    font-size: 18px;
+    flex-grow: 0.3;
+    align-self: flex-start;
+}
+.prec_desc .descuento {
+    /*border: dotted 2px red;*/
+    font-size: 16px;
+    color: #666;
+    flex-grow: 0.7;
+    align-self: flex-end;
 }
 .descripcion {
     display: none;
     font-size: 16px;
     color: #666;
 }
-.precio {
-    font-size: 18px;
-}
-.descuento {
+.foot_product i {
+    display: block;
     font-size: 16px;
-    color: #666;
-}
-.foot_product {
-    border: dotted 2px blue;
-    margin: 15px;
-}
-.foot_product img {
-    width: 15%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 .foot_product p {
-    margin: 0;;
+    margin: 0;
 }
 
 
@@ -163,7 +205,17 @@ header {
     }
     
 }
+
 @media (min-width: 769px) {
+    .all_regular, .all_offer {
+        max-width: 769px;
+    }
+
+}
+@media (min-width: 1416px) {
+    .all_regular, .all_offer {
+        max-width: 1416px;
+    }
 
 }
 

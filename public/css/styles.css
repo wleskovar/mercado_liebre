@@ -16,20 +16,30 @@ header {
 .main-header {
     background-color: #EAC926;
     top: 0;
+    /*border: dotted 2px red;*/
+}
+.logo_search_header {
+    /*border: dotted 2px black;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* company logo */
 .logo {
-    width: 200px;
+    width: 50%;
+    flex-grow: 0.5;
 }
 /* product and brand search engine */
 .search_bar {
-
+    width: 50%;
+    flex-grow: 0.5;
 }
 /* legend form of payment */
 .copy-header {
+    /*border: dotted 2px black;*/
     margin: 5px;
-
 }
 /* menu options */
 .main_navbar {
@@ -46,6 +56,7 @@ header {
 }
 /* burger menu */
 .hamburguer-button {
+    /*border: dotted 2px black;*/
     background-color: #1259c3;
     color: #ffffff;
     display: block;
@@ -197,12 +208,6 @@ header {
     .product_container {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .main_navbar {
-        display: block;
-    }
-    .hamburguer-button {
-        display: none;
-    }
     
 }
 
@@ -210,12 +215,61 @@ header {
     .all_regular, .all_offer {
         max-width: 769px;
     }
+    .roof_menu {
+        /*border: dotted 2px black;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .copy-header {
+        /*border: dotted 2px red;*/
+        padding-top: 18px;
+        padding-right: 5px;
+    }
+    .logo_search_header {
+        flex-grow: 0.9;
+        align-items: center;
+    }   
+    .main_navbar {
+        display: block;
+    }
+    .hamburguer-button {
+        display: none;
+    }
+    .main_navbar {
+        /*border: dotted 2px black;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navbar, .login_bar {
+        /*border: dotted 2px black;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 25px;
+    }
+    .navbar li, .login_bar li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
+    
 }
 @media (min-width: 1416px) {
     .all_regular, .all_offer {
         max-width: 1416px;
     }
-
+    .copy-header {
+        /*order: dotted 2px red;*/
+        padding-top: 60px;
+        padding-right: 5px;
+        flex-grow: 0.1;
+    }
+    .logo_search_header {
+        /*border: dotted 2px red;*/
+        flex-grow: 0.9;
+        align-items: center;
+    }
 }
 

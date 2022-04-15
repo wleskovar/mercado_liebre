@@ -256,6 +256,87 @@ header {
 
     
 }
+
+/* ============================================================================== */
+/* Formato de los elementos de register.html */
+.create_form {
+    padding: 20px 15px;
+    background-color: #ebebeb;
+    margin-bottom: 10px;
+}
+.control_formulario {
+    margin-bottom: 15px;
+}
+.control_formulario_perfil, .control_formulario_categorias {
+    margin-bottom: 15px;
+    font-style: italic;
+    font-weight: bolder;
+}
+.control_formulario label {
+    margin-bottom: 5px;
+    font-style: italic;
+    font-weight: bolder;
+    display: block;
+}
+.control {
+    width: 90%;
+    padding: 8px;
+}
+.boton_formulario {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+.boton_formulario:hover {
+    background-color: #03540e;
+}
+
+/* ================================================================================================================ */
+/* Formulario de Login */
+
+.create_form_login {
+    border: dotted 2px black;
+    padding: 20px 15px;
+    background-color: #ebebeb;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    /*justify-self: center;*/
+    align-items: center;
+
+}
+.control_formulario_usuario, .control_formulario_clave {
+    border: dotted 2px black;
+    margin-bottom: 15px;
+    width: 70%;
+}
+/*.control_formulario_usuario label, .control_formulario_clave label {
+    margin-bottom: 5px;
+    font-style: italic;
+    font-weight: bolder;
+    display: block;
+} */
+.boton_formulario_enviar {
+    border: dotted 2px black;
+    background-color: #39b54a;
+    /*border: none;*/
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 70%; 
+    align-content: center;
+    
+}
+.boton_formulario_enviar:hover {
+    background-color: #03540e;
+}
+/* ============================================================================== */
+/* Parte donde se implementan los Media Queries para los distintos dispositivos */
+
 @media (min-width: 1416px) {
     .all_regular, .all_offer {
         max-width: 1416px;

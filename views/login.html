@@ -55,50 +55,16 @@
 
 
     <!-- Formulario -->
-    <form action="/" method="get" class="create_form">
-        <div class="control_formulario">
-            <label>Nombre y apellido: </label>
-            <input type="text" name="nombre_comppleto" class="control" placeholder="Ingresar el nombre completo">
-        </div>
-        <div class="control_formulario">
-            <label>Nombre de usuario: </label>
+    <form action="/" method="get" class="create_form_login">
+        <div class="control_formulario_usuario">
+            <!--<label>Nombre de usuario: </label>-->
             <input type="text" name="usuario" class="control" placeholder="Ingresar el nombre de usuario">
         </div>
-        <div class="control_formulario">
-            <label>Fecha de nacimiento: </label>
-            <input type="date" name="fecha_nacimiento" class="control">
-        </div>
-        <div class="control_formulario">
-            <label>Domicilio: </label>
-            <textarea name="domicilio" class="control" placeholder="Domicilio completo, no olvidar código postal"></textarea>
-        </div>
-        <div class="control_formulario_perfil">
-            <label for="perfil">Perfil del usuario: </label>
-            <label>comprar <input type="checkbox" name="perfil" value="comprar"></label>
-            <label>vender <input type="checkbox" name="perfil" value="vender"></label>
-        </div>
-        <div class="control_formulario_categorias">
-            <label for="perfil">Categorías de interés: </label>
-            <label>Electro - <input type="checkbox" name="perfil" value="electro"></label>
-            <label>Moda - <input type="checkbox" name="perfil" value="Moda"></label>
-            <label>Hogar - <input type="checkbox" name="perfil" value="hogar"></label>
-            <label>Juguetería - <input type="checkbox" name="perfil" value="jugueteria"></label>
-            <label>Vida sana - <input type="checkbox" name="perfil" value="vida_sana"></label>
-        </div>
-        <div class="control_formulario">
-            <label>Foto de usuario: </label>
-            <input type="file" name="foto_usuario" accept= ".jpeg,.png" class="control">
-        </div>
-        <div class="control_formulario">
-            <label>Contraseña: </label>
-            <input type="password" name="pass" class="control" placeholder="Contraseña no menor a 8 caracteres alfanuméricos">
-        </div>
-        <div class="control_formulario">
-            <label>Confirmar contraseña: </label>
-            <input type="password" name="pass" class="control" placeholder="Repita su contraseña para verificar">
-        </div>           
-        <button type= "submit" class="boton_formulario">Guardar</button>
-        <button type="reset" class="boton_formulario">Borrar</button>
+        <div class="control_formulario_clave">
+            <!--<label>Contraseña: </label>-->
+            <input type="password" name="pass" class="control" placeholder="Ingrese su contraseña">
+        </div>          
+        <button type= "submit" class="boton_formulario_enviar">Enviar</button>
     </form>
     <footer class="foot_configuration">
         <!-- purchase conditions -->

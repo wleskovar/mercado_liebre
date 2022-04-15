@@ -41,7 +41,7 @@
                  <li><a href="#">Ayuda</a></li>
              </ul>
              <ul class="login_bar ">
-                 <li><a href="#">Creá tu cuenta <i class="fa-solid fa-credit-card"></i></a></li>
+                 <li><a href="/register">Creá tu cuenta <i class="fa-solid fa-credit-card"></i></a></li>
                  <li><a href="#">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
                  <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
              </ul>
@@ -56,14 +56,10 @@
 
     <!-- Formulario -->
     <form action="/" method="get" class="create_form_login">
-        <div class="control_formulario_usuario">
-            <!--<label>Nombre de usuario: </label>-->
-            <input type="text" name="usuario" class="control" placeholder="Ingresar el nombre de usuario">
-        </div>
-        <div class="control_formulario_clave">
-            <!--<label>Contraseña: </label>-->
-            <input type="password" name="pass" class="control" placeholder="Ingrese su contraseña">
-        </div>          
+        <input class="control_formulario_usuario" type="text" name="usuario" class="control" placeholder="Ingresar el nombre de usuario"
+        required minlength="6" size="10">
+        <input class="control_formulario_clave" type="password" name="pass" class="control" placeholder="Ingrese su contraseña"
+        required minlength="8" size="10">
         <button type= "submit" class="boton_formulario_enviar">Enviar</button>
     </form>
     <footer class="foot_configuration">

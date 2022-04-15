@@ -42,7 +42,7 @@
              </ul>
              <ul class="login_bar ">
                  <li><a href="#">Creá tu cuenta <i class="fa-solid fa-credit-card"></i></a></li>
-                 <li><a href="#">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                 <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
                  <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
              </ul>
          </nav> 
@@ -58,23 +58,27 @@
     <form action="/" method="get" class="create_form">
         <div class="control_formulario">
             <label>Nombre y apellido: </label>
-            <input type="text" name="nombre_comppleto" class="control" placeholder="Ingresar el nombre completo">
+            <input type="text" name="nombre_completo" class="control" placeholder="Ingresar el nombre completo"
+                    required minlength="8" size="10">
         </div>
         <div class="control_formulario">
             <label>Nombre de usuario: </label>
-            <input type="text" name="usuario" class="control" placeholder="Ingresar el nombre de usuario">
+            <input type="text" name="usuario" class="control" placeholder="Ingresar el nombre de usuario"
+            required minlength="6" size="10">
         </div>
         <div class="control_formulario">
             <label>Fecha de nacimiento: </label>
-            <input type="date" name="fecha_nacimiento" class="control">
+            <input type="date" name="fecha_nacimiento" class="control" required>
         </div>
         <div class="control_formulario">
             <label>Domicilio: </label>
-            <textarea name="domicilio" class="control" placeholder="Domicilio completo, no olvidar código postal"></textarea>
+            <textarea name="domicilio" class="control" placeholder="Domicilio completo, no olvidar código postal"
+            required minlength="10" size="10">
+            </textarea>
         </div>
         <div class="control_formulario_perfil">
             <label for="perfil">Perfil del usuario: </label>
-            <label>comprar <input type="checkbox" name="perfil" value="comprar"></label>
+            <label>comprar <input type="checkbox" name="perfil" value="comprar" checked></label>
             <label>vender <input type="checkbox" name="perfil" value="vender"></label>
         </div>
         <div class="control_formulario_categorias">
@@ -91,11 +95,13 @@
         </div>
         <div class="control_formulario">
             <label>Contraseña: </label>
-            <input type="password" name="pass" class="control" placeholder="Contraseña no menor a 8 caracteres alfanuméricos">
+            <input type="password" name="pass" class="control" placeholder="Contraseña no menor a 8 caracteres alfanuméricos"
+                required minlength="6" size="10">
         </div>
         <div class="control_formulario">
             <label>Confirmar contraseña: </label>
-            <input type="password" name="pass" class="control" placeholder="Repita su contraseña para verificar">
+            <input type="password" name="pass" class="control" placeholder="Repita su contraseña para verificar"
+            required minlength="8" size="10">
         </div>           
         <button type= "submit" class="boton_formulario">Guardar</button>
         <button type="reset" class="boton_formulario">Borrar</button>

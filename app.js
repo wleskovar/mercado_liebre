@@ -13,8 +13,8 @@ const views= path.resolve(__dirname, './views');
 app.use(express.static(public));
 
 
-app.listen(8000, ()=> {
-    console.log('Se inicio el servidor en el puerto 8000')
+app.listen(process.env.PORT || 3000, ()=> {
+    console.log('Se inicio el servidor en el puerto 3000')
 });
 
 app.get('/', (req, res) => {

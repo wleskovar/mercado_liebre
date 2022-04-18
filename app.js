@@ -26,9 +26,7 @@ app.get('/register', (req, res) => {
 app.get('/login', (req, res) => {
     res.status(200).sendFile(views + '/login.html');
 })
-app.get('/home', (req, res) => {
-    res.status(200).sendFile(views + '/home.html');
-})
+
 
 
 

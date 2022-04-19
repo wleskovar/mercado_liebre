@@ -42,8 +42,33 @@ input:valid {
 }
 /* product and brand search engine */
 .search_bar {
-    width: 50%;
+    /*border: dotted 2px black;*/
+    position: relative;
+    width: 70%;
     flex-grow: 0.5;
+}
+.search_box {
+    /*border: dotted 2px rgb(81, 255, 0);*/
+    padding: 10px 20px 8px 15px;
+    margin: 10px;
+}
+.search_box input {
+    border: dotted 2px red;
+    box-sizing: border-box;
+    color: #191919;
+    padding: 15px 15px 15px 35px;
+    width: 100%;
+}
+.search_icon {
+    /*border: dotted 2px red;*/
+    color: #191919;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 12px;
+	top: 60%;
+    padding-left: 3px;
+	transform: translateY(-60%);
 }
 /* legend form of payment */
 .copy-header {
@@ -329,6 +354,7 @@ input:valid {
         /*border: dotted 2px red;*/
         padding-top: 18px;
         padding-right: 5px;
+        font-size: 18px;
     }
     .logo_search_header {
         flex-grow: 0.9;
@@ -336,6 +362,9 @@ input:valid {
     }   
     .main_navbar {
         display: block;
+    }
+    .main_navbar a {
+        font-size: 13px;
     }
     .hamburguer-button {
         display: none;
